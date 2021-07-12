@@ -4,10 +4,10 @@ nationality_choice=(("iranian","ایرانی"),("other","غیر ایرانی"))
 illness_choice=(("blood pressure","فشار خون"),("diabet","دیابت"))
 class mdl_language(models.Model):
     name_lan=models.CharField(verbose_name="نام زبان",max_length=20)
-    class Meta:
-        verbose_name=u"زبان ها"
-        defــstrــ(self):
-            return self.name_lan;
+    # class Meta:
+        # verbose_name=u"زبان ها"
+        # defــstrــ(self):
+            # return self.name_lan;
 class mdl_participant(models.Model):
     mobile=models.CharField(verbose_name="شماره همراه",max_length=20)
     date_enter=models.DateTimeField(auto_now_add=True,verbose_name="تاریخ و ساعت ورود")
